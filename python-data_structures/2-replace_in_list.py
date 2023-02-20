@@ -1,3 +1,7 @@
 #!/usr/bin/python3
-def divisible_by_2(my_list=[]):
-    return list(map(lambda x: True if x % 2 == 0 else False, my_list))
+def replace_in_list(my_list, idx, element):
+    if idx < 0 or idx >= len(my_list):
+        return my_list
+
+    my_list[idx] = element
+    return
