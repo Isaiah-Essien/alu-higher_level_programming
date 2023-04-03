@@ -1,5 +1,3 @@
 #!/bin/bash
-# Check if URL argument is provided
-[ -z "$1" ] && { echo "Error: Please provide a URL as an argument."; exit 1; }
-size=$(curl -s -w "\n%{size_download}\n" -o /dev/null "$1" | tail -n 1)
-echo "Size of response body: $size bytes"
+# script that takes in a URL, sends a request to that URL, and displays the size of the body of the response
+curl -sI "$1" | awk '/Content-Length/{print $2}'
