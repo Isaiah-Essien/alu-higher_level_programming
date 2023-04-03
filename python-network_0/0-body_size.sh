@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Check if URL argument is provided
 if [ -z "$1" ]; then
   echo "Error: Please provide a URL as an argument."
