@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # base.py
- # Isaiah_Essien
+# Isaiah_Essien
 """Defines a base model class."""
 import json
 import csv
